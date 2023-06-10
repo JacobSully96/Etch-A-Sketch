@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,20 @@
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 </head>
+
 <body>
-    
-    
+
+
     <div class="board"></div>
-    
-    <button onclick="resetBoard()">Reset</button>
+
+    <div class="colorBtns">
+        <button onclick="changeColor('black')">Black</button>
+        <button onclick="changeColor('white')">White</button>
+        <button onclick="changeColor('gray')">Gray</button>
+        <button onclick="resetBoard()">Reset</button>
+    </div>
+
 
 </body>
+
 </html>
