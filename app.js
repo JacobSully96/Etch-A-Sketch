@@ -1,24 +1,23 @@
-const gridContainer = document.querySelector('.grid-container');
 
+function makeGrid(size){
 
-function makeGrid() {
-    
-    for (i = 0; i <= 8; i++) {
-        for(j = 0; j <= 8; j++){
-            const square = document.createElement('div');
-            square.classList.add('square');
-            gridContainer.appendChild(square);
-        }
+    let board = document.querySelector('.board');
+    board.style.gridTemplateColumns = "repeat(16, 1fr)";
+    board.style.gridTemplateRows = "repeat(16, 1fr)";
+
+    let amount = size * size;
+    for (i = 0; i <= amount; i++) {
+        let square = document.createElement('div');
+        square.style.backgroundColor = "blue";
+        board.insertAdjacentElement('beforeend', square);
+        square.addEventListener('mouseover', colorSquare);
     }
-
-
-
 }
 
-makeGrid();
+makeGrid(16);
 
 
-// square.addEventListener('click', function(){
-//     square.classList.remove('square');
-//     square.classList.add('square-active');
-// });
+
+function colorSquare() {
+    this.style.backgroundColor = 'black';
+}
