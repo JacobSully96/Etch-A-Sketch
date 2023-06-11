@@ -18,8 +18,14 @@ function makeGrid(size) {
     }
 }
 
-// create grid with size parameter
-makeGrid(40);
+
+// create grid with size parameter default to 16 x 16 grid
+makeGrid(16);
+
+// Change dimensions of grid base on number input value
+function setSize(input){
+  makeGrid(input);
+}
 
 // changes color of square when hovered over, the 'drawing' part of the board
 function colorSquare() {
