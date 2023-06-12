@@ -1,6 +1,7 @@
 
 let color = 'black';
 
+// Creates the grid
 function makeGrid(size) {
 
     let board = document.querySelector('.board');

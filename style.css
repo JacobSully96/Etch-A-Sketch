@@ -1,6 +1,74 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-align: center;
+}
+
 .board{
     width: 500px;
     height: 500px;
     display: grid;
 }
 
+
+.colorBtns{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.colorBtns button{
+    height: 30px;
+    width: 75px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+#blackBtn{
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+
+#whiteBtn{
+    background-color: white;
+}
+
+#grayBtn{
+    background-color: gray;
+    color: white;
+}
+
+#resetBtn{
+    background-color: rgb(255, 125, 125);
+}
+
+#randomBtn{
+    background-color: rgb(253, 255, 154);
+}
+
+.grid-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+#grid-size-label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+#gridSize{
+    margin-left: 20px;
+    width: 50px;
+    font-size: 15px;
+    border: solid gray 1px;
+    border-radius: 4px;
+}
